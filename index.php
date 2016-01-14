@@ -20,7 +20,7 @@
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
 
-        <?php echo "HI"?>  DUDEEEEES BUDDY?  Is there possibly something for DeployHQ in there as well?
+        <?php echo "HI"?>  DUDEEEEES BUDDY?  Is there possibly something for DeployHQ in there as well?  With Multiple Servers????
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
