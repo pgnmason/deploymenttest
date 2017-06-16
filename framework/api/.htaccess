@@ -1,0 +1,6 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^locations/([A-Za-z0-9-]+)?$    index.php?sub=locations&task=$1   [NC,L]
+RewriteRule    ^locations/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$    index.php?sub=locations&task=$1&q=$2   [NC,L]
+RewriteRule    ^chartbeat/([A-Za-z0-9-]+)?$    index.php?sub=chartbeat&task=$1   [NC,L]
+RewriteRule    ^chartbeat/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$    index.php?sub=chartbeat&task=$1&section=$2   [NC,L]
+RewriteRule    ^chartbeat/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$    index.php?sub=chartbeat&task=$1&section=$2&limit=$3 [NC,L]

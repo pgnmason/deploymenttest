@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_statgeek/models/rules"
+	addfieldpath="/administrator/components/com_statgeek/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			class="inputbox name"
+			default=""
+			description=""
+			label="Name"
+			name="name"
+			size="40"
+			type="text"
+		/>
+		<field
+			default="1"
+			description=""
+			label="Published"
+			name="published"
+			type="list"
+		>
+			<option
+				value="1">1</option>
+			<option
+				value="0">0</option>
+		</field>
+	</fieldset>
+</form>

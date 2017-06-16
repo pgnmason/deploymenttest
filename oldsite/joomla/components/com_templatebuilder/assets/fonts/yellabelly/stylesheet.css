@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Yellabelly';
+    src: url('yellabelly-webfont.eot');
+    src: url('yellabelly-webfont.eot?#iefix') format('embedded-opentype'),
+         url('yellabelly-webfont.woff') format('woff'),
+         url('yellabelly-webfont.ttf') format('truetype'),
+         url('yellabelly-webfont.svg#YellabellyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Hero Light';
+    src: url('hero_light.eot');
+    src: url('hero_light') format('embedded-opentype'),
+         url('hero_light.woff') format('woff'),
+         url('hero_light.ttf') format('truetype'),
+         url('hero_light.svg#hero_light') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('hero.eot');
+    src: url('hero') format('embedded-opentype'),
+         url('hero.woff') format('woff'),
+         url('hero.ttf') format('truetype'),
+         url('hero.svg#hero') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

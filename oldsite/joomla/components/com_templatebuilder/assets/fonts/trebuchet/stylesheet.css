@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'Trebuchet';
+    src: url('trebuc_0.eot');
+    src: url('trebuc_0') format('embedded-opentype'),
+         url('trebuc_0.woff') format('woff'),
+         url('trebuc_0.ttf') format('truetype'),
+         url('trebuc_0.svg#trebuc_0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

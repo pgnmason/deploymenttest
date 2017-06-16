@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+   <update>
+      <name>StatGeek</name>
+      <description>StatGeek Component</description>
+      <element>com_statgeek</element>
+      <type>component</type>
+      <version>1.0.2</version>
+ 
+      <infourl title="Statgeek URL">http://www.bricklayertech.com/statgeek</infourl>
+      <downloads>
+         <downloadurl type="full" format="zip">http://apps.bricklayertech.com/joomla/components/statgeek/com_statgeek_1.0.2.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>some-tag</tag>
+      </tags>
+ 
+      <maintainer>Bricklayertech Inc.</maintainer>
+      <maintainerurl>http://www.bricklayertech.com</maintainerurl>
+      <section>This update includes team attributes fields as well as updated team classes</section>
+      <targetplatform name="joomla" version="2.5" />
+   </update>
+</updates>

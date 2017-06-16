@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Templates Layout">
+		<message>
+			<![CDATA[Templates Layout]]>
+		</message>
+	</layout>
+	<!--<state>
+		<name>Templates Layout</name>
+		<description>Templates Layout</description>
+	</state>-->
+	
+	
+	
+	<!--<fields name="params">
+		<fieldset name="advanced" label="COM_MENUS_LAYOUT_FEATURED_OPTIONS"  addfieldpath="/administrator/components/com_templatebuilder/models/fields">
+			<field type="categories" name="categories" label="Categories" id="categories"/>
+		</fieldset>
+	</fields>-->
+	
+</metadata>

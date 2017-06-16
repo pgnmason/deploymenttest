@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Dry Cowboy';
+    src: url('drycowboy-webfont.eot');
+    src: url('drycowboy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('drycowboy-webfont.woff') format('woff'),
+         url('drycowboy-webfont.ttf') format('truetype'),
+         url('drycowboy-webfont.svg#DryCowboyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

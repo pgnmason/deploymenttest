@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_statgeek/models/rules"
+	addfieldpath="/administrator/components/com_statgeek/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			class="inputbox name"
+			default=""
+			description=""
+			label="Name"
+			name="name"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox label"
+			default=""
+			description=""
+			label="Label"
+			name="label"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox abbrev"
+			default=""
+			description=""
+			label="Abbreviation"
+			name="abbreviation"
+			size="40"
+			type="text"
+		/>
+		<field
+			name="type"
+			type="hidden"
+			value="1"
+		/>
+		
+		<field
+			default="1,2"
+			description=""
+			label="Sports"
+			name="sport"
+			type="sql"
+			query="SELECT * FROM #__statgeek_sport" 
+			key_field="id" 
+			value_field="name"
+			multiple="true"
+		/>
+		<!--
+		This is commented out in case of future expansion.
+		<field name="type" type="list" label="Type"
+			description="The type of field this is.  Will determine which page it ends up on" class="inputbox"
+			filter="intval" size="1" default="1"
+		>
+			<option value="1">
+				Player</option>
+			<option value="0">
+				Coach</option>
+			<option value="2">
+				Internal</option>
+		</field>-->
+		<field
+			class="inputbox ordering"
+			default=""
+			description=""
+			label="Order"
+			name="ordering"
+			size="40"
+			type="text"
+		/>
+		<field name="field_type" type="list" label="Field Type"
+			description="The input type.  This will determine what type of field shows up" class="inputbox"
+			default="text"
+		>
+			<option value="text">Text</option>
+			<option value="media">Media</option>
+			<option value="calendar">Calendar</option>
+			<option value="editor">Editor</option>
+			<option value="textarea">Text Area</option>
+			<option value="sql">SQL</option>
+			<option value="list">List</option>
+		</field>
+		<field
+			class="inputbox field_data"
+			default=""
+			description=""
+			label="Field Data"
+			name="field_data"
+			size="40"
+			type="text"
+		/>
+	</fieldset>
+</form>

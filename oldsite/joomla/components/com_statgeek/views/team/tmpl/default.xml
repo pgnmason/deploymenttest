@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_STATGEEK_TEAM_VIEW_DEFAULT_TITLE">
+		<message>COM_STATGEEK_TEAM_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_statgeek/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				required="true"
+				type="statgeek7"
+				label="COM_STATGEEK_TEAM_FIELD_NAME_LABEL"
+				description="COM_STATGEEK_TEAM_FIELD_NAME_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_CREATED_BY"
+            description="COM_TEMPLATEBUILDER_FORM_DESC_TEMPLATE_CREATED_BY"  /> 
+
+       <field name="title" type="text" size="40" class="inputbox"
+        
+            label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_TITLE"
+            description="COM_TEMPLATEBUILDER_FORM_DESC_TEMPLATE_TITLE" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="positions" type="text"
+                
+            label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_POSITIONS"
+            description="COM_TEMPLATEBUILDER_FORM_DESC_TEMPLATE_POSITIONS" 
+                
+                
+                
+            filter="raw" /> 
+
+       <field name="layouts" type="text"
+                
+            label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_LAYOUTS"
+            description="COM_TEMPLATEBUILDER_FORM_DESC_TEMPLATE_LAYOUTS" 
+                
+                
+                
+            filter="raw" /> 
+
+       <field name="created" type="timeupdated" default="" 
+            label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_CREATED"
+            description="COM_TEMPLATEBUILDER_FORM_DESC_TEMPLATE_CREATED"  /> 
+
+       <field name="version" type="hidden"
+                
+            label="COM_TEMPLATEBUILDER_FORM_LBL_TEMPLATE_VERSION"
+            description="COM_TEMPLATEBUILDER_FORM_DESC_TEMPLATE_VERSION" 
+                
+                
+                
+            filter="raw" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

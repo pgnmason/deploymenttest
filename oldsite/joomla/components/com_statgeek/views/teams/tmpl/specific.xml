@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="Specified Teams">
+		<message>Specified Teams</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_statgeek/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="teams"
+				type="sql"
+				query="select * from #__statgeek_team"
+				label="Teams"
+				description="List of Teams to include"
+				multiple = "multiple"
+				value_field = "name"
+				key_field = "id"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

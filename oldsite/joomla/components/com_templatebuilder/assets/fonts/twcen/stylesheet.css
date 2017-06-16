@@ -1,0 +1,23 @@
+    @font-face
+    {
+        font-family : "TW Cen Condensed";
+        
+		src: url("TCCM____.eot") /* EOT file for IE */
+		src: url("TCCM____.eot?#iefix") /* EOT file for IE */
+		src: url('TCCM____.woff');
+		 src: url("TCCM____.TTF");
+		 font-weight: normal;
+    	font-style: normal;
+    }
+   
+    @font-face
+    {
+        font-family : "TW Cen Condensed";
+        
+		src: url("TCCB____.eot") /* EOT file for IE */
+		src: url("TCCB____.eot?#iefix") /* EOT file for IE */
+		src: url('TCCB____.woff');
+		 src: url("TCCB____.TTF");
+		 font-weight: bold;
+    	font-style: normal;
+    }

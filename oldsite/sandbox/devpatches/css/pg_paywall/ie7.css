@@ -1,0 +1,140 @@
+#landing_box .left-col{
+	/*width:447px;
+	padding-left:20px;*/
+	padding-left:0px;
+}
+
+#landing_box .right-col{
+	/*padding-top: 10px;
+	width: 431px;
+	padding-left: 30px;
+	padding-right: 10px;*/
+	padding-right:10px;
+	width:43%;
+	padding-left:0px;
+}
+
+.hero_box .left-col{
+	padding-left:0px !important;
+}
+
+.hero_box .right-col{
+	padding-right:10px;
+	width:43%;
+}
+
+#landing_box .action-box{
+	margin-bottom:15px;
+	padding-bottom:15px;
+}
+
+
+#corporate_bottom #faq{
+	padding:0px !important;
+	width:100% !important;
+	margin-bottom:10px;
+	float:none !important;
+}
+
+#corporate_benefits, #corporate_facts{
+	padding:0px !important;
+	width:48% !important;
+}
+
+#corporate_benefits{ margin-left:0px !important;}
+
+#corporate_facts{ float:right !important; }
+
+#landing_box .action-box .left-cell{
+	width:49%;
+	padding-right: 0;
+	float:left;
+	margin-right:1%;
+}
+
+#landing_box .action-box .right-cell{
+	/**/padding-left: 0;
+	padding-right:0;
+	width:49%;
+	text-align:right;
+	float:left;
+	margin-left:1%;
+}
+
+#landing_box .action-box .right-cell .green-button{
+	width:120px;
+	margin-right:10px;
+	margin-left:0px; 
+}
+
+.two-col .col {width: 49%;padding: 0px !important;font-size: 16px;float: left;}
+
+.two-col .first{margin-right: 2%;}
+
+.two-col .col .wrapper{
+	padding:30px;
+}
+
+
+#feature_box1{
+	padding:0px !important;
+	margin:0px;
+	width:65%;
+}
+
+#feature_box1 .right-col, #feature_box1 .left-col {
+width: 49%;
+padding: 0%;
+}
+
+#feature_box1 .left-col{
+	margin-left:1%;
+}
+
+#feature_box1 .right-col{
+	margin-right:1%;
+}
+
+#feature_box1 .right-col p, #feature_box1 .left-col p {
+	width:95%;
+	margin:auto;
+}
+
+#feature_box2{
+	padding:0px;
+	float:right;
+}
+
+#feature_box2 p{
+	width:95%;
+	margin:auto;
+}
+
+
+#education_bottom .col {
+	padding:15px 0px !important;
+	margin:0px!important;
+	margin-bottom:10px !important;
+}
+
+#education_steps{
+	float:right;
+}
+
+#education_steps p, #education_steps h3{
+	width:95%;
+	margin:auto;
+}
+
+#billingbox .left-col, #billingbox .right-col{
+	padding:0px !important;
+}
+#billingbox .left-col p, #billingbox .right-col p, #billingbox .left-col h3, #billingbox .right-col h3{
+	width:95%;
+	margin:auto;
+}
+
+
+
+
+
