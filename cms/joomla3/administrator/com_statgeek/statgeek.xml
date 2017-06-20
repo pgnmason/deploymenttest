@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>COM_STATGEEK</name>
+	<creationDate>June 26, 2013</creationDate>
+	<author>Nate Mason</author>
+	<authorEmail>mandawgus@gmail.com</authorEmail>
+	<authorUrl>www.bricklayertech.com</authorUrl>
+	<copyright>Copyright (C) 2013. All Rights Reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.0.1</version>
+	<description><![CDATA[
+		<h1>Stat Geek (v.1.0.1)</h1>
+		<div style="clear: both;"></div>
+		<p>Stat Tracking and Sports League Management Software. <strong>Built for Joomla 2.5.0.</strong></p>
+		<p>Created by <a href="http://www.bricklayertech.com" target="_blank">Nate Mason | www.bricklayertech.com</a>
+	]]></description>
+
+	<!-- Runs on install; New in Joomla 1.5 -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<!-- Runs on uninstall; New in Joomla 1.5 -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Runs on install/uninstall/update; New in Joomla 2.5 -->
+	<scriptfile>script.php</scriptfile>
+
+	<!-- Update Schema; New in Joomla 2.5 -->
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql/</schemapath>
+		</schemas>
+	</update>
+
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+			<!-- Note: No spaces or linebreaks allowed between the server tags -->
+			<server type="extension" priority="1" name="Statgeek Update Site">http://www.ntmasonconsulting.com/oldsite/apps/joomla/components/statgeek/statgeek-update.xml</server>
+	</updateservers>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>statgeek.php</filename>
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu>COM_STATGEEK_MENU</menu>
+		<submenu>
+			<!-- Instead of link you can specify individual link attributes -->
+			<menu option="com_statgeek" view="statgeek">COM_STATGEEK_MENU_STATGEEK</menu>
+			<menu option="com_statgeek" view="sports">COM_STATGEEK_MENU_SPORTS</menu>
+			<menu option="com_statgeek" view="leagues">COM_STATGEEK_MENU_LEAGUES</menu>
+			<menu option="com_statgeek" view="seasons">COM_STATGEEK_MENU_SEASONS</menu>
+			<menu option="com_statgeek" view="games">COM_STATGEEK_MENU_GAMES</menu>
+			<menu option="com_statgeek" view="stats">COM_STATGEEK_MENU_STATS</menu>
+			<menu option="com_statgeek" view="positions">COM_STATGEEK_MENU_POSITIONS</menu>
+			<menu option="com_statgeek" view="teams">COM_STATGEEK_MENU_TEAMS</menu>
+			<menu option="com_statgeek" view="players">COM_STATGEEK_MENU_PLAYERS</menu>
+			<menu option="com_statgeek" view="coaches">COM_STATGEEK_MENU_COACHES</menu>
+			<menu option="com_statgeek" view="attributes">COM_STATGEEK_MENU_ATTRIBUTES</menu>
+			<menu link="option=com_categories&amp;extension=com_statgeek">COM_STATGEEK_MENU_MENU_CATEGORIES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>statgeek.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_statgeek.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_statgeek.sys.ini</language>
+		</languages>
+
+	</administration>
+</extension>

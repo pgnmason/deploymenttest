@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__statgeek_statgeek`;
+DROP TABLE IF EXISTS `#__statgeek_sport`;
+DROP TABLE IF EXISTS `#__statgeek_league`;
+DROP TABLE IF EXISTS `#__statgeek_season`;
+DROP TABLE IF EXISTS `#__statgeek_game`;
+DROP TABLE IF EXISTS `#__statgeek_stat`;
+DROP TABLE IF EXISTS `#__statgeek_position`;
+DROP TABLE IF EXISTS `#__statgeek_team`;
+DROP TABLE IF EXISTS `#__statgeek_player`;
+DROP TABLE IF EXISTS `#__statgeek_coache`;
+DROP TABLE IF EXISTS `#__statgeek_attribute`;
