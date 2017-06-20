@@ -91,6 +91,6 @@
 	<!-- UPDATESERVER DEFINITION -->
 	<updateservers>
 			<!-- Note: No spaces or linebreaks allowed between the server tags -->
-			<server type="extension" priority="1" name="HelloWorld Update Site">http://www.bricklayertech.com/apps/joomla/components/statgeek/statgeek-update.xml</server>
+			<server type="extension" priority="1" name="Statgeek Update Site">http://www.ntmasonconsulting.com/oldsite/apps/joomla/components/statgeek/statgeek-update.xml</server>
 	</updateservers>
 </extension>

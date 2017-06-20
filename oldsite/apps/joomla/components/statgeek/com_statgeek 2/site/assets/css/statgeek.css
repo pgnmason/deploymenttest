@@ -1,0 +1,46 @@
+#team-data{
+	width:60%;
+	float:left
+}
+
+#team-staff table, #team-roster table{
+	width:100%;
+	border-collapse:collapse;
+}
+
+#team-schedule{
+	float:left;
+	width:40%;
+}
+
+#team-schedule .game{
+	border-bottom: 1px solid #fff;
+	font-size:11px;
+}
+
+#team-schedule .game .gamedate{
+	float:left;
+	width:35%;
+}
+
+#team-schedule .game .opponent{
+	float:left;
+	width:50%;
+}
+
+#team-schedule .home .opponent{
+	font-weight:bold;
+}
+
+#team-schedule .game .result{
+	float:left;
+	width:15%;
+}
+
+#team-staff{
+	margin-bottom:15px;
+}
+
+#team-roster{
+	margin-bottom:15px;
+}

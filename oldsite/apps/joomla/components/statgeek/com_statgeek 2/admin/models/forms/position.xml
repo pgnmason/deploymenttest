@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_statgeek/models/rules"
+	addfieldpath="/administrator/components/com_statgeek/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			class="inputbox name"
+			default=""
+			description=""
+			label="Name"
+			name="name"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox abbreviation"
+			default=""
+			description=""
+			label="Abbreviation"
+			name="abbreviation"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Sport"
+			name="sports"
+			type="sql"
+			query="SELECT * FROM #__statgeek_sport" 
+			key_field="id" 
+			value_field="name"
+		/>
+		<field name="type" type="list" label="Type"
+			description="The type of field this is.  Will determine which page it ends up on" class="inputbox"
+			filter="intval" size="1" default="1"
+		>
+			<option value="1">
+				Player</option>
+			<option value="0">
+				Coach</option>
+			<!--<option value="2">
+				Internal</option>-->
+		</field>
+	</fieldset>
+</form>

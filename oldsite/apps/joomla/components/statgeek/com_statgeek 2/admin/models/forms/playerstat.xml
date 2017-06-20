@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_statgeek/models/rules"
+	addfieldpath="/administrator/components/com_statgeek/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="type"
+			type="hidden"
+			default="1"
+		/>
+		<field
+			default=""
+			description=""
+			label="Player"
+			name="player"
+			type="sql"
+			query="SELECT *, concat(lastname,', ',firstname) as name FROM #__statgeek_player order by name" 
+			key_field="id" 
+			value_field="name"
+		>	
+		
+		
+		</field>
+		<field
+			default=""
+			description=""
+			label="Team"
+			name="team"
+			type="sql"
+			query='SELECT a.*, CONCAT(b.name," - ",a.name) as title FROM #__statgeek_team as a, #__statgeek_league as b WHERE a.league = b.id order by title asc' 
+			key_field="id" 
+			value_field="title"
+		>
+		<option value="0">N/A</option>
+		</field>
+		<field
+			default=""
+			description=""
+			label="Season"
+			name="season"
+			type="sql"
+			query='SELECT a.*, CONCAT(b.name," - ",a.name) as title FROM #__statgeek_season as a, #__statgeek_league as b WHERE a.league = b.id order by title asc' 
+			key_field="id" 
+			value_field="title"
+		>
+		<option value="0">N/A</option>
+		</field>
+		<field
+			default=""
+			description=""
+			label="Game"
+			name="game"
+			type="sql"
+			query='SELECT id, concat( (
+
+SELECT name
+FROM jos_statgeek_team
+WHERE id = `jos_statgeek_game`.awayteam
+), " @ ", (
+
+SELECT name
+FROM jos_statgeek_team
+WHERE id = `jos_statgeek_game`.hometeam
+), " - (", `date`,")" ) AS name
+FROM jos_statgeek_game
+ORDER BY date ASC' 
+			key_field="id" 
+			value_field="name"
+		>
+		<option value="0">N/A</option>
+		</field>
+		
+	</fieldset>
+</form>

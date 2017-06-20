@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_statgeek/models/rules"
+	addfieldpath="/administrator/components/com_statgeek/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			class="inputbox firstname"
+			default=""
+			description=""
+			label="First Name"
+			name="firstname"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox lastname"
+			default=""
+			description=""
+			label="Last Name"
+			name="lastname"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Team"
+			name="team"
+			type="sql"
+			query="SELECT * FROM #__statgeek_team" 
+			key_field="id" 
+			value_field="name"
+		/>
+		<field
+			default=""
+			description=""
+			label="Bio"
+			name="bio"
+			filter="safehtml"
+			width="300"
+			type="editor"
+		/>
+	</fieldset>
+</form>
