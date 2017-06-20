@@ -29,7 +29,7 @@ $document->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.
 $document->addScript('components/com_statgeek/assets/js/statgeek.js');
 
 // Get an instance of the controller prefixed by Statgeek
-$controller = JController::getInstance('Statgeek');
+$controller = JControllerLegacy::getInstance('Statgeek');
 
 // Perform the Request task
 $controller->execute(JRequest::getCmd('task'));
