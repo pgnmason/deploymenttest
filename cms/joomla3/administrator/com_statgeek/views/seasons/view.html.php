@@ -17,7 +17,7 @@ jimport('joomla.application.component.view');
 /**
  * seasons View
  */
-class StatgeekViewseasons extends JView
+class StatgeekViewseasons extends JViewLegacy
 {
 	/**
 	 * Seasons view display method

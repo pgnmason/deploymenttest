@@ -17,7 +17,7 @@ jimport('joomla.application.component.view');
 /**
  * Team View
  */
-class StatgeekViewteam extends JView
+class StatgeekViewteam extends JViewLegacy
 {
 	/**
 	 * display method of Team view

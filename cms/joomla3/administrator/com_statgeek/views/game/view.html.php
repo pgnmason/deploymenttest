@@ -17,7 +17,7 @@ jimport('joomla.application.component.view');
 /**
  * Game View
  */
-class StatgeekViewgame extends JView
+class StatgeekViewgame extends JViewLegacy
 {
 	/**
 	 * display method of Game view

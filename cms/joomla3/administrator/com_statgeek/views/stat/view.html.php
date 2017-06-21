@@ -17,7 +17,7 @@ jimport('joomla.application.component.view');
 /**
  * Stat View
  */
-class StatgeekViewstat extends JView
+class StatgeekViewstat extends JViewLegacy
 {
 	/**
 	 * display method of Stat view

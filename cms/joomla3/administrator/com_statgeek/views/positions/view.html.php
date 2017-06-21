@@ -17,7 +17,7 @@ jimport('joomla.application.component.view');
 /**
  * positions View
  */
-class StatgeekViewpositions extends JView
+class StatgeekViewpositions extends JViewLegacy
 {
 	/**
 	 * Positions view display method

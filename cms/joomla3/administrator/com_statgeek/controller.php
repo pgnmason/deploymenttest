@@ -17,7 +17,7 @@ jimport('joomla.application.component.controller');
 /**
  * General Controller of Statgeek component
  */
-class StatgeekController extends JController
+class StatgeekController extends JControllerLegacy
 {
 	/**
 	 * display task
