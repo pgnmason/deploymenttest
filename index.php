@@ -18,9 +18,9 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <h1>UNDER CONSTRUCTION</h1>
 
-        <?php echo "HI"?>  DUDEEEEES BUDDY?  Is there possibly something for DeployHQ in there as well?  With Multiple Servers????  Can deploybot Respond?
+       <p>I'm building something here.  This is my personal site.</p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
