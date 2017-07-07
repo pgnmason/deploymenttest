@@ -1,0 +1,525 @@
+{
+  "Ace_Hardware": {
+    "name": "Ace Hardware",
+    "code": "Ace_Hardware",
+    "categories": [
+      "hardware",
+      "lawn_garden",
+      "tools"
+    ]
+  },
+  "AshleyFurnitureHomeStore": {
+    "name": "Ashley Home Furniture",
+    "code": "AshleyFurnitureHomeStore",
+    "categories": [
+      "furniture",
+      "home_goods"
+    ]
+  },
+  "AutoZone": {
+    "name": "AutoZone",
+    "code": "AutoZone",
+    "categories": [
+      "automotive",
+      "tools"
+    ]
+  },
+  "BP": {
+    "name": "BP",
+    "code": "BP",
+    "categories": [
+      "fuel",
+      "convenience"
+    ]
+  },
+  "BananaRepublic": {
+    "name": "Banana Republic",
+    "code": "BananaRepublic",
+    "categories": [
+      "womens_clothing",
+      "mens_clothing",
+      "upscale_clothing"
+    ]
+  },
+  "Bass_Pro_Shops": {
+    "name": "Bass Pro Shops",
+    "code": "Bass_Pro_Shops",
+    "categories": [
+      "sporting",
+      "outdoors"
+    ]
+  },
+  "BedBeakfast": {
+    "name": "Bed & Beakfast",
+    "code": "BedBeakfast",
+    "categories": [
+      "restaurant",
+      "hotel"
+    ]
+  },
+  "Bed_Bath_Beyond": {
+    "name": "Bed Bath & Beyond",
+    "code": "Bed_Bath_Beyond",
+    "categories": [
+      "home_goods"
+    ]
+  },
+  "BestWestern": {
+    "name": "Best Western",
+    "code": "BestWestern",
+    "categories": [
+      "hotel"
+    ]
+  },
+  "Big_Lots": {
+    "name": "Big Lots",
+    "code": "Big_Lots",
+    "categories": [
+      "discount",
+      "department",
+      "home_goods",
+      "grocery",
+      "tools"
+    ]
+  },
+  "CVS_Pharmacy": {
+    "name": "CVS Pharmacy",
+    "code": "CVS_Pharmacy",
+    "categories": [
+      "pharmacy",
+      "grocery",
+      "convenience"
+    ]
+  },
+  "Cabelas": {
+    "name": "Cabela's",
+    "code": "Cabelas",
+    "categories": [
+      "sporting",
+      "outdoors"
+    ]
+  },
+  "Carters": {
+    "name": "Carter's",
+    "code": "Carters",
+    "categories": ["baby_clothing","kids_clothing"]
+  },
+  "Chevron": {
+    "name": "Chevron",
+    "code": "Chevron",
+    "categories": [
+      "fuel",
+      "convenience"
+    ]
+  },
+  "Chick-fil-A": {
+    "name": "Chick-fil-A",
+    "code": "Chick-fil-A",
+    "categories": [
+      "restaurant",
+      "fast_food",
+      "burgers"
+    ]
+  },
+  "Chipotle": {
+    "name": "Chipotle",
+    "code": "Chipotle",
+    "categories": [
+      "restaurant",
+      "fast_food",
+      "mexican_food"
+    ]
+  },
+  "Costco_USA_Canada": {
+    "name": "Costco",
+    "code": "Costco_USA_Canada",
+    "categories": [
+      "department",
+      "warehouse",
+      "grocery",
+      "home_goods",
+      "automotive",
+      "fuel"
+    ]
+  },
+  "Dennys": {
+    "name": "Denny's",
+    "code": "Dennys",
+    "categories": [
+      "restaurant",
+      "casual_dining",
+      "american_food"
+    ]
+  },
+  "Dicks_Sporting_Goods": {
+    "name": "Dick's Sporting Goods",
+    "code": "Dicks_Sporting_Goods",
+    "categories": [
+      "outdoors",
+      "sporting",
+      "mens_clothing",
+      "womens_clothing"
+    ]
+  },
+  "Dollar_General": {
+    "name": "Dollar General",
+    "code": "Dollar_General",
+    "categories": [
+      "convenience",
+      "discount",
+      "grocery"
+    ]
+  },
+  "Dunham's_Sports": {
+    "name": "Dunham's Sports",
+    "code": "Dunham's_Sports",
+    "categories": [
+      "outdoors",
+      "sporting",
+      "mens_clothing",
+      "womens_clothing"
+    ]
+  },
+  "Five_Below": {
+    "name": "Five Below",
+    "code": "Five_Below",
+    "categories": [
+      "discount",
+      "convenience"
+    ]
+  },
+  "Gander_Mtn": {
+    "name": "Gander Mountain",
+    "code": "Gander_Mtn",
+    "categories": [
+      "outdoors",
+      "sporting"
+    ]
+  },
+  "Hobby_Lobby": {
+    "name": "Hobby Lobby",
+    "code": "Hobby_Lobby",
+    "categories": [
+      "home_goods",
+      "arts_crafts"
+    ]
+  },
+  "HomeDepot": {
+    "name": "Home Depot",
+    "code": "HomeDepot",
+    "categories": [
+      "lawn_garden",
+      "hardware",
+      "tools"
+    ]
+  },
+  "Home_Depot_USA": {
+    "name": "Home Depot",
+    "code": "Home_Depot_USA",
+    "categories": [
+      "lawn_garden",
+      "hardware",
+      "tools"
+    ]
+  },
+  "Ikea": {
+    "name": "Ikea",
+    "code": "Ikea",
+    "categories": [
+      "home_goods",
+      "furniture",
+      "discount"
+    ]
+  },
+  "JCPenneyStores": {
+    "name": "JC Penney",
+    "code": "JCPenneyStores",
+    "categories": [
+      "department",
+      "mens_clothing",
+      "womens_clothing",
+      "kids_clothing",
+      "jewelry",
+      "home_goods",
+      "cosmetics"
+    ]
+  },
+  "JimmyJohnsGourmetSandwiches": {
+    "name": "Jimmy John's Gourmet Sandwiches",
+    "code": "JimmyJohnsGourmetSandwiches",
+    "categories": [
+      "fast_food",
+      "restaurant",
+      "sandwiches"
+    ]
+  },
+  "JoesCrabShack": {
+    "name": "Joe's Crab Shack",
+    "code": "JoesCrabShack",
+    "categories": [
+      "casual_dining",
+      "restaurant",
+      "seafood"
+    ]
+  },
+  "K-Mart_USA": {
+    "name": "K-Mart",
+    "code": "K-Mart_USA",
+    "categories": [
+      "department",
+      "discount",
+      "grocery",
+      "mens_clothing",
+      "kids_clothing",
+      "womens_clothing",
+      "home_goods"
+    ]
+  },
+  "Kohls": {
+    "name": "Kohl's",
+    "code": "Kohls",
+    "categories": [
+      "department",
+      "mens_clothing",
+      "womens_clothing",
+      "kids_clothing",
+      "jewelry",
+      "home_goods",
+      "cosmetics"]
+  },
+  "LittleCaesarsPizza": {
+    "name": "Little Caesar's Pizza",
+    "code": "LittleCaesarsPizza",
+    "categories": ["restaurant","delivery","pizza"]
+  },
+  "Lowes": {
+    "name": "Lowe's",
+    "code": "Lowes",
+    "categories": [
+      "lawn_garden",
+      "hardware",
+      "tools"
+    ]
+  },
+  "Lowes_USA_Can": {
+    "name": "Lowe's",
+    "code": "Lowes_USA_Can",
+    "categories": [
+      "lawn_garden",
+      "hardware",
+      "tools"
+    ]
+  },
+  "Lumber_Liquidators": {
+    "name": "Lumber Liquidators",
+    "code": "Lumber_Liquidators",
+    "categories": [
+      "lawn_garden",
+      "hardware",
+      "tools"
+    ]
+  },
+  "Macy's_Department_Stores": {
+    "name": "Macy's",
+    "code": "Macy's_Department_Stores",
+    "categories": [
+      "department",
+      "mens_clothing",
+      "womens_clothing",
+      "kids_clothing",
+      "jewelry",
+      "home_goods",
+      "cosmetics",
+      "furniture"
+      ]
+  },
+  "Macys": {
+    "name": "Macy's",
+    "code": "Macys",
+    "categories": [
+      "department",
+      "mens_clothing",
+      "womens_clothing",
+      "kids_clothing",
+      "jewelry",
+      "home_goods",
+      "cosmetics",
+      "furniture"
+      ]
+  },
+  "Marshalls": {
+    "name": "Marshall's",
+    "code": "Marshalls",
+    "categories": ["mens_clothing","womens_clothing","shoes","department","discount","kids_clothing","home_goods"]
+  },
+  "MassageEnvy": {
+    "name": "Massage Envy",
+    "code": "MassageEnvy",
+    "categories": ["wellness","spa"]
+  },
+  "McDonalds": {
+    "name": "McDonald's",
+    "code": "McDonalds",
+    "categories": ["fast_food","restaurant","burgers"]
+  },
+  "Michaels_Arts_and_Crafts-USA_Can": {
+    "name": "Michaels",
+    "code": "Michaels_Arts_and_Crafts-USA_Can",
+    "categories": ["arts_crafts","home_goods"]
+  },
+  "NationalRegisterofHistoricPlaces-NortheastRegion": {
+    "name": "National Registry of Historic Places -Northeast Region",
+    "code": "NationalRegisterofHistoricPlaces-NortheastRegion",
+    "categories": ["recreation","amusement","museum"]
+  },
+  "OshKosh_B'Gosh": {
+    "name": "OshKosh B'Gosh",
+    "code": "OshKosh_B'Gosh",
+    "categories": ["baby_clothing","kids_clothing"]
+  },
+  "OshKoshBGosh": {
+    "name": "OshKosh B'Gosh",
+    "code": "OshKoshBGosh",
+    "categories": ["baby_clothing","kids_clothing"]
+  },
+  "OutbackSteakhouse": {
+    "name": "Outback Steakhouse",
+    "code": "OutbackSteakhouse",
+    "categories": ["restuaurant","casual_dining","steakhouse"]
+  },
+  "PaneraBread": {
+    "name": "Panera Bread",
+    "code": "PaneraBread",
+    "categories": ["restaurant","casual_dining","breakfast","sandwiches"]
+  },
+  "PetSmart": {
+    "name": "PetSmart",
+    "code": "PetSmart",
+    "categories": ["pets","grooming"]
+  },
+  "Pet_Supplies_Plus": {
+    "name": "Pet Supplies Plus",
+    "code": "Pet_Supplies_Plus",
+    "categories": ["pets"]
+  },
+  "Petco_US": {
+    "name": "Petco",
+    "code": "Petco_US",
+    "categories": ["pets"]
+  },
+  "QuikTrip_Stores_&_Travel_Centers": {
+    "name": "QuikTrip",
+    "code": "QuikTrip_Stores_&_Travel_Centers",
+    "categories": ["fuel","convenience"]
+  },
+  "REI": {
+    "name": "REI",
+    "code": "REI",
+    "categories": ["mens_clothing","outdoors","sporting","womens_clothing"]
+  },
+  "REI_2": {
+    "name": "REI",
+    "code": "REI_2",
+    "categories": ["mens_clothing","outdoors","sporting","womens_clothing"]
+  },
+  "Ron_Jon_Surf_Shop": {
+    "name": "Ron Jon Surf Shop",
+    "code": "Ron_Jon_Surf_Shop",
+    "categories": ["outdoors"]
+  },
+  "SamsClub": {
+    "name": "Sams Club",
+    "code": "SamsClub",
+    "categories": ["department",
+      "warehouse",
+      "grocery",
+      "home_goods",
+      "automotive",
+      "fuel"]
+  },
+  "Staples_USA": {
+    "name": "Staples",
+    "code": "Staples_USA",
+    "categories": ["electronics","office_supplies"]
+  },
+  "SuperCuts_Salons": {
+    "name": "SuperCuts Salon",
+    "code": "SuperCuts_Salons",
+    "categories": ["spa","salon"]
+  },
+  "TJMaxx": {
+    "name": "T.J. Maxx",
+    "code": "TJMaxx",
+    "categories": ["mens_clothing","womens_clothing","shoes","department","discount","kids_clothing","home_goods"]
+  },
+  "Target_Stores": {
+    "name": "Target",
+    "code": "Target_Stores",
+    "categories":  [
+      "department",
+      "discount",
+      "grocery",
+      "mens_clothing",
+      "kids_clothing",
+      "womens_clothing",
+      "baby_clothing",
+      "home_goods",
+      "cosmetics",
+      "pharmacy"
+    ]
+  },
+  "ToysRUs": {
+    "name": "Toys 'R Us",
+    "code": "ToysRUs",
+    "categories": ["toys","baby_clothing"]
+  },
+  "Toys_R_Us_USA": {
+    "name": "Toys 'R Us",
+    "code": "Toys_R_Us_USA",
+    "categories": ["toys","baby_clothing"]
+  },
+  "TraderJoes": {
+    "name": "Trader Joe's",
+    "code": "TraderJoes",
+    "categories": ["grocery","upscale"]
+  },
+  "USPostalService": {
+    "name": "US Postal Service",
+    "code": "USPostalService",
+    "categories": ["government","postal"]
+  },
+  "Ulta": {
+    "name": "Ulta",
+    "code": "Ulta",
+    "categories": ["cosmetics"]
+  },
+  "Walgreens": {
+    "name": "Walgreen's",
+    "code": "Walgreens",
+    "categories": ["pharmacy","cosmetics","grocery","convenience"]
+  },
+  "Walmart": {
+    "name": "Walmart",
+    "code": "Walmart",
+    "categories":  [
+      "department",
+      "discount",
+      "grocery",
+      "mens_clothing",
+      "kids_clothing",
+      "womens_clothing",
+      "home_goods",
+      "pharmacy"
+    ]
+  },
+  "Winn_Dixie": {
+    "name": "Winn Dixie",
+    "code": "Winn_Dixie",
+    "categories": ["grocery"]
+  },
+  "BestBuy": {
+    "name": "Best Buy",
+    "code": "BestBuy",
+    "categories": ["electronics","office_supplies","toys"]
+  }
+}
