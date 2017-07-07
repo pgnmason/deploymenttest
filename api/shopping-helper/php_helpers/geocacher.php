@@ -14,7 +14,7 @@ function geolookup($string){
     return null;
    }
  
-   print_r($response);
+   //print_r($response);
    $geometry = $response['results'][0]['geometry'];
  
     $longitude = $geometry['location']['lat'];
@@ -30,8 +30,21 @@ function geolookup($string){
  
 }
 
+$stores = json_decode(file_get_contents("raw/ChildrensPlace_locations.json"));
 
-$cok = file_get_contents("raw/oshkosh_carters.txt");
+foreach($stores as $store){
+  $addr_arr = explode("<br>", $store->address);
+  //$addr_arr = array_slice($addr_arr, 0, count($addr_arr)-1);
+  $plainaddr = implode(" ", $addr_arr);
+  $data = geolookup($plainaddr);
+  if($data){
+   $store->latitude = $data['latitude'];
+   $store->longitude = $data['longitude'];
+  }else{
+    echo $plainaddr."\r\n";
+  }
+}
+/*$cok = file_get_contents("../raw/VictoriasSecret_locations.json");
 
 $arr = explode("-------------", $cok);
 $oshkosh_count = 0;
@@ -69,13 +82,11 @@ foreach($arr as $a){
 	//echo $a."\r\n\r\n";
 }
 //var_dump($stores);
-echo "\r\n\r\n";
-echo "Osh Kosh: ".$oshkosh_count."\r\n";
-echo "Carters: ".$carters_count."\r\n";
-echo "Total: ".count($arr)."\r\n\r\n";
+*/
 
 
-file_put_contents("json/carters_oshkosh_geodata.json", json_encode($stores));
+
+file_put_contents("raw/ChildrensPlace_geodata.json", json_encode($stores));
 switch (json_last_error()) {
         case JSON_ERROR_NONE:
             echo ' - No errors';

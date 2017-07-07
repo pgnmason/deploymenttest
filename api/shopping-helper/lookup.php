@@ -1,7 +1,10 @@
 <?php
 require("lib/jsonloader.php");
-$loader = new JSONLoader("json","individual_files");
+require("lib/ajaxresponse.php");
 parse_str(implode('&', array_slice($argv, 1)), $_GET);
+$loader = new JSONLoader("json","individual_files");
+
+$response = new AjaxResponse();
 
 if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !empty($_GET['zip']))){
 	
@@ -25,8 +28,6 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 		$distance = 25;
 	}
 
-	echo $distance;
-
 	$locations = $loader->getStoreData($_GET['q']);
 	//var_dump($locations);
 	$storeinfo = $loader->loadStoreLocations($locations);
@@ -42,6 +43,15 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 
 	$clusters = new NodeBuilder($candidates);
 	$output = $clusters->getClusters();
-	var_dump($clusters->getClusters());
+	if($output){
+		$response->code=200;
+		$response->status="ok";
+		$response->message="success";
+		$response->data = $output;
+	}else{
+		$response->code=501;
+		$response->message="Internal Error";
+	}
 }
+echo json_encode($response);
 ?>

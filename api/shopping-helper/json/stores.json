@@ -385,7 +385,7 @@
   "OutbackSteakhouse": {
     "name": "Outback Steakhouse",
     "code": "OutbackSteakhouse",
-    "categories": ["restuaurant","casual_dining","steakhouse"]
+    "categories": ["restaurant","casual_dining","steakhouse"]
   },
   "PaneraBread": {
     "name": "Panera Bread",
@@ -521,5 +521,51 @@
     "name": "Best Buy",
     "code": "BestBuy",
     "categories": ["electronics","office_supplies","toys"]
+  },
+  "HM": {
+    "name": "H&M",
+    "code": "HM",
+    "categories": ["mens_clothing","womens_clothing","baby_clothing","kids_clothing","discount"]
+  },
+  "ChildrensPlace": {
+    "name": "The Children's Place",
+    "code": "ChildrensPlace",
+    "categories": ["baby_clothing","kids_clothing"]
+  },
+  "VictoriasSecret": {
+    "name": "Victoria's Secret",
+    "code": "VictoriasSecret",
+    "categories": ["lingerie","womens_clothing","cosmetics"]
+  },
+  "GiantEagle": {
+    "name": "Giant Eagle",
+    "code": "GiantEagle",
+    "categories": ["grocery","pharmacy"]
+  },
+  "GiantEagleMarketDistrict": {
+    "name": "The Market District by Giant Eagle",
+    "code": "GiantEagleMarketDistrict",
+    "categories": ["grocery","upscale","pharmacy"]
+  },
+  "GetGo": {
+    "name": "GetGo by Giant Eagle",
+    "code": "GetGo",
+    "categories": ["grocery","fuel"]
+  },
+  "Gymboree": {
+    "name": "Gymboree",
+    "code": "Gymboree",
+    "categories": ["kids_clothing","baby_clothing"]
+  },
+  "MaxErmas": {
+    "name": "Max & Ermas",
+    "code": "MaxErmas",
+    "categories": ["restaurant","casual_dining","american_food"]
+  },
+  "BabiesRUs": {
+    "name": "Babies 'R Us",
+    "code": "BabiesRUs",
+    "categories": ["kids_clothing","baby_clothing","toys","parenting_supplies"]
   }
+  
 }
