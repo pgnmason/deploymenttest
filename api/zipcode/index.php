@@ -1,4 +1,5 @@
 <?php
+ini_set("display_errors", 1);
 $config_path = dirname(__FILE__)."/../flip/app/php/config/";
 $inc_root = dirname(__FILE__)."/../flip/app/php";
 
