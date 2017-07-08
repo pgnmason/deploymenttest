@@ -31,7 +31,6 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 	$locations = $loader->getStoreData($_GET['q']);
 	//var_dump($locations);
 	$storeinfo = $loader->loadStoreLocations($locations);
-	//var_dump($storeinfo);
 	$candidates = array();
 
 	foreach ($storeinfo as $key => $value) {
@@ -40,7 +39,7 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 		$results = $locator->nearbyStores($lat,$lon);
 		array_push($candidates,$results);
 	}
-
+	
 	$clusters = new NodeBuilder($candidates);
 	$output = $clusters->getClusters();
 	if($output){
@@ -53,5 +52,7 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 		$response->message="Internal Error";
 	}
 }
+ header("Access-Control-Allow-Origin: *");
+ header('Content-Type: application/json');
 echo json_encode($response);
 ?>

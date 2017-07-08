@@ -8,11 +8,18 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App },
-  mounted () {
-    console.log('YOOO')
-  }
+    el: '#app',
+    router,
+    template: '<App/>',
+    components: { App },
+    mounted() {
+        console.log('YOOO');
+        axios.get('http://ntmasonconsulting.com/api/shopping-helper/lookup.php?q=target,bestbuy&zip=15218')
+        .then(function(response) {
+        	console.log(response)
+        })
+        .catch(function(error) {
+            console.log(error)
+        });
+    }
 })

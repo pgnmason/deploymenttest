@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>YOOOOOO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+
+    <div id="root">
+   		<input type="text" id="zipcode" v-model="message">
+   		<input type="hidden" id="lat">
+   		<input type="hidden" id="lng">
+   	</div>
+
+
+
+        <script src="https://unpkg.com/vue@2.3.4"></script>
+        <script>
+        	let info = {
+        		message:"15218"	
+        	}
+
+        	new Vue({
+        		el:"#root",
+        		data:info
+        	})
+        </script>
+    </body>
+</html>

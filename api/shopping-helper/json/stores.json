@@ -2,6 +2,7 @@
   "Ace_Hardware": {
     "name": "Ace Hardware",
     "code": "Ace_Hardware",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Ace_Hardware_Logo.svg/400px-Ace_Hardware_Logo.svg.png",
     "categories": [
       "hardware",
       "lawn_garden",
@@ -11,6 +12,7 @@
   "AshleyFurnitureHomeStore": {
     "name": "Ashley Home Furniture",
     "code": "AshleyFurnitureHomeStore",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Ashley_Furniture_HomeStores_logo.png/440px-Ashley_Furniture_HomeStores_logo.png",
     "categories": [
       "furniture",
       "home_goods"
@@ -19,6 +21,7 @@
   "AutoZone": {
     "name": "AutoZone",
     "code": "AutoZone",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/38/Logo_of_AutoZone.png",
     "categories": [
       "automotive",
       "tools"
@@ -27,6 +30,7 @@
   "BP": {
     "name": "BP",
     "code": "BP",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/BP_Helios_logo.svg/300px-BP_Helios_logo.svg.png",
     "categories": [
       "fuel",
       "convenience"
@@ -35,6 +39,7 @@
   "BananaRepublic": {
     "name": "Banana Republic",
     "code": "BananaRepublic",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Banana_Republic_logo.png/500px-Banana_Republic_logo.png",
     "categories": [
       "womens_clothing",
       "mens_clothing",
@@ -44,14 +49,16 @@
   "Bass_Pro_Shops": {
     "name": "Bass Pro Shops",
     "code": "Bass_Pro_Shops",
+    "logo":"https://en.wikipedia.org/wiki/File:Bass_Pro_Shops_logo.png",
     "categories": [
       "sporting",
       "outdoors"
     ]
   },
   "BedBeakfast": {
-    "name": "Bed & Beakfast",
+    "name": "Bed & Beakfasts",
     "code": "BedBeakfast",
+    "logo":"",
     "categories": [
       "restaurant",
       "hotel"
@@ -60,6 +67,7 @@
   "Bed_Bath_Beyond": {
     "name": "Bed Bath & Beyond",
     "code": "Bed_Bath_Beyond",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bedbath%26beyond.svg/400px-Bedbath%26beyond.svg.png",
     "categories": [
       "home_goods"
     ]
@@ -67,6 +75,7 @@
   "BestWestern": {
     "name": "Best Western",
     "code": "BestWestern",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Best_Western_Hotels_%26_Resorts_logo.svg/440px-Best_Western_Hotels_%26_Resorts_logo.svg.png",
     "categories": [
       "hotel"
     ]
@@ -74,6 +83,7 @@
   "Big_Lots": {
     "name": "Big Lots",
     "code": "Big_Lots",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Big_Lots_logo.jpeg/200px-Big_Lots_logo.jpeg",
     "categories": [
       "discount",
       "department",
@@ -85,6 +95,7 @@
   "CVS_Pharmacy": {
     "name": "CVS Pharmacy",
     "code": "CVS_Pharmacy",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/CVSPharmacyLogo2014.png/500px-CVSPharmacyLogo2014.png",
     "categories": [
       "pharmacy",
       "grocery",
@@ -94,6 +105,7 @@
   "Cabelas": {
     "name": "Cabela's",
     "code": "Cabelas",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/7/79/Cabela%27s-Logo-1.png",
     "categories": [
       "sporting",
       "outdoors"
@@ -102,11 +114,13 @@
   "Carters": {
     "name": "Carter's",
     "code": "Carters",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/8/8a/Carters-logo.PNG",
     "categories": ["baby_clothing","kids_clothing"]
   },
   "Chevron": {
     "name": "Chevron",
     "code": "Chevron",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Chevron_Logo.svg/250px-Chevron_Logo.svg.png",
     "categories": [
       "fuel",
       "convenience"
@@ -115,6 +129,7 @@
   "Chick-fil-A": {
     "name": "Chick-fil-A",
     "code": "Chick-fil-A",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Chick-fil-A_Logo.svg/440px-Chick-fil-A_Logo.svg.png",
     "categories": [
       "restaurant",
       "fast_food",
@@ -122,8 +137,9 @@
     ]
   },
   "Chipotle": {
-    "name": "Chipotle",
+    "name": "Chipotle Mexican Grill",
     "code": "Chipotle",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Chipotle_Mexican_Grill_logo.svg/400px-Chipotle_Mexican_Grill_logo.svg.png",
     "categories": [
       "restaurant",
       "fast_food",
@@ -133,6 +149,7 @@
   "Costco_USA_Canada": {
     "name": "Costco",
     "code": "Costco_USA_Canada",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Costco_Wholesale.svg/500px-Costco_Wholesale.svg.png",
     "categories": [
       "department",
       "warehouse",
@@ -145,15 +162,18 @@
   "Dennys": {
     "name": "Denny's",
     "code": "Dennys",
+    "logo":"https://en.wikipedia.org/wiki/File:Denny%27s_logo.svg",
     "categories": [
       "restaurant",
       "casual_dining",
-      "american_food"
+      "american_food",
+      "breakfast"
     ]
   },
   "Dicks_Sporting_Goods": {
     "name": "Dick's Sporting Goods",
     "code": "Dicks_Sporting_Goods",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Dick%27s_Sporting_Goods.svg/400px-Dick%27s_Sporting_Goods.svg.png",
     "categories": [
       "outdoors",
       "sporting",
@@ -164,6 +184,7 @@
   "Dollar_General": {
     "name": "Dollar General",
     "code": "Dollar_General",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/c/ce/Dollar_General_logo.png",
     "categories": [
       "convenience",
       "discount",
@@ -173,6 +194,7 @@
   "Dunham's_Sports": {
     "name": "Dunham's Sports",
     "code": "Dunham's_Sports",
+    "logo":"",
     "categories": [
       "outdoors",
       "sporting",
@@ -183,6 +205,7 @@
   "Five_Below": {
     "name": "Five Below",
     "code": "Five_Below",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/0/03/Five_below_logo.png",
     "categories": [
       "discount",
       "convenience"
@@ -191,6 +214,7 @@
   "Gander_Mtn": {
     "name": "Gander Mountain",
     "code": "Gander_Mtn",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/4/49/Gander_Mountain_logo.png",
     "categories": [
       "outdoors",
       "sporting"
@@ -199,6 +223,7 @@
   "Hobby_Lobby": {
     "name": "Hobby Lobby",
     "code": "Hobby_Lobby",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hobby_lobby_logo15.png/500px-Hobby_lobby_logo15.png",
     "categories": [
       "home_goods",
       "arts_crafts"
@@ -207,6 +232,7 @@
   "HomeDepot": {
     "name": "Home Depot",
     "code": "HomeDepot",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/TheHomeDepot.svg/300px-TheHomeDepot.svg.png",
     "categories": [
       "lawn_garden",
       "hardware",
@@ -216,6 +242,7 @@
   "Home_Depot_USA": {
     "name": "Home Depot",
     "code": "Home_Depot_USA",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/TheHomeDepot.svg/300px-TheHomeDepot.svg.png",
     "categories": [
       "lawn_garden",
       "hardware",
@@ -225,6 +252,7 @@
   "Ikea": {
     "name": "Ikea",
     "code": "Ikea",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/440px-Ikea_logo.svg.png",
     "categories": [
       "home_goods",
       "furniture",
@@ -234,6 +262,7 @@
   "JCPenneyStores": {
     "name": "JC Penney",
     "code": "JCPenneyStores",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/JCPenney.svg/500px-JCPenney.svg.png",
     "categories": [
       "department",
       "mens_clothing",
@@ -247,6 +276,7 @@
   "JimmyJohnsGourmetSandwiches": {
     "name": "Jimmy John's Gourmet Sandwiches",
     "code": "JimmyJohnsGourmetSandwiches",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/b/b5/Jimmy_John%27s_Logo.png",
     "categories": [
       "fast_food",
       "restaurant",
@@ -256,6 +286,7 @@
   "JoesCrabShack": {
     "name": "Joe's Crab Shack",
     "code": "JoesCrabShack",
+    "logo":"https://www.brandsoftheworld.com/sites/default/files/styles/logo-original-577x577/public/082013/joes_crab_shack.jpg?itok=DezmXjI3",
     "categories": [
       "casual_dining",
       "restaurant",
@@ -265,6 +296,7 @@
   "K-Mart_USA": {
     "name": "K-Mart",
     "code": "K-Mart_USA",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Kmart_logo.svg/350px-Kmart_logo.svg.png",
     "categories": [
       "department",
       "discount",
@@ -278,6 +310,7 @@
   "Kohls": {
     "name": "Kohl's",
     "code": "Kohls",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Kohl%27s.svg/500px-Kohl%27s.svg.png",
     "categories": [
       "department",
       "mens_clothing",
@@ -290,11 +323,13 @@
   "LittleCaesarsPizza": {
     "name": "Little Caesar's Pizza",
     "code": "LittleCaesarsPizza",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Little_Caesars_logo.svg/500px-Little_Caesars_logo.svg.png",
     "categories": ["restaurant","delivery","pizza"]
   },
   "Lowes": {
     "name": "Lowe's",
     "code": "Lowes",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Lowes_Companies_Logo.svg/400px-Lowes_Companies_Logo.svg.png",
     "categories": [
       "lawn_garden",
       "hardware",
@@ -304,6 +339,7 @@
   "Lowes_USA_Can": {
     "name": "Lowe's",
     "code": "Lowes_USA_Can",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Lowes_Companies_Logo.svg/400px-Lowes_Companies_Logo.svg.png",
     "categories": [
       "lawn_garden",
       "hardware",
@@ -313,6 +349,7 @@
   "Lumber_Liquidators": {
     "name": "Lumber Liquidators",
     "code": "Lumber_Liquidators",
+    "logo":"",
     "categories": [
       "lawn_garden",
       "hardware",
@@ -322,6 +359,7 @@
   "Macy's_Department_Stores": {
     "name": "Macy's",
     "code": "Macy's_Department_Stores",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Macys.svg/400px-Macys.svg.png",
     "categories": [
       "department",
       "mens_clothing",
@@ -336,6 +374,7 @@
   "Macys": {
     "name": "Macy's",
     "code": "Macys",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Macys.svg/400px-Macys.svg.png",
     "categories": [
       "department",
       "mens_clothing",
@@ -350,86 +389,103 @@
   "Marshalls": {
     "name": "Marshall's",
     "code": "Marshalls",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Marshalls_Logo.svg/440px-Marshalls_Logo.svg.png",
     "categories": ["mens_clothing","womens_clothing","shoes","department","discount","kids_clothing","home_goods"]
   },
   "MassageEnvy": {
     "name": "Massage Envy",
     "code": "MassageEnvy",
+    "logo":"https://www.brandsoftheworld.com/sites/default/files/styles/logo-original-577x577/public/042016/untitled-1_153.png?itok=Gg4fey-6",
     "categories": ["wellness","spa"]
   },
   "McDonalds": {
     "name": "McDonald's",
     "code": "McDonalds",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/300px-McDonald%27s_Golden_Arches.svg.png",
     "categories": ["fast_food","restaurant","burgers"]
   },
   "Michaels_Arts_and_Crafts-USA_Can": {
     "name": "Michaels",
     "code": "Michaels_Arts_and_Crafts-USA_Can",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Michaels_Logo.svg/378px-Michaels_Logo.svg.png",
     "categories": ["arts_crafts","home_goods"]
   },
   "NationalRegisterofHistoricPlaces-NortheastRegion": {
     "name": "National Registry of Historic Places -Northeast Region",
     "code": "NationalRegisterofHistoricPlaces-NortheastRegion",
+    "logo":"",
     "categories": ["recreation","amusement","museum"]
   },
   "OshKosh_B'Gosh": {
     "name": "OshKosh B'Gosh",
     "code": "OshKosh_B'Gosh",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/2/28/OshKosh_B%27Gosh_Logo.jpeg",
     "categories": ["baby_clothing","kids_clothing"]
   },
   "OshKoshBGosh": {
     "name": "OshKosh B'Gosh",
     "code": "OshKoshBGosh",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/2/28/OshKosh_B%27Gosh_Logo.jpeg",
     "categories": ["baby_clothing","kids_clothing"]
   },
   "OutbackSteakhouse": {
     "name": "Outback Steakhouse",
     "code": "OutbackSteakhouse",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Outback_Steakhouse.svg/500px-Outback_Steakhouse.svg.png",
     "categories": ["restaurant","casual_dining","steakhouse"]
   },
   "PaneraBread": {
     "name": "Panera Bread",
     "code": "PaneraBread",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/f/f1/PaneraLogo.png",
     "categories": ["restaurant","casual_dining","breakfast","sandwiches"]
   },
   "PetSmart": {
     "name": "PetSmart",
     "code": "PetSmart",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/0/01/PetSmart.svg/400px-PetSmart.svg.png",
     "categories": ["pets","grooming"]
   },
   "Pet_Supplies_Plus": {
     "name": "Pet Supplies Plus",
     "code": "Pet_Supplies_Plus",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Pet_Supplies_Plus_logo.png/500px-Pet_Supplies_Plus_logo.png",
     "categories": ["pets"]
   },
   "Petco_US": {
     "name": "Petco",
     "code": "Petco_US",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Petco_logo.svg/500px-Petco_logo.svg.png",
     "categories": ["pets"]
   },
   "QuikTrip_Stores_&_Travel_Centers": {
     "name": "QuikTrip",
     "code": "QuikTrip_Stores_&_Travel_Centers",
+    "logo": "https://en.wikipedia.org/wiki/File:QuikTrip_logo.png",
     "categories": ["fuel","convenience"]
   },
   "REI": {
     "name": "REI",
     "code": "REI",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/c/ca/Rei_coop_logo.png",
     "categories": ["mens_clothing","outdoors","sporting","womens_clothing"]
   },
   "REI_2": {
     "name": "REI",
     "code": "REI_2",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/c/ca/Rei_coop_logo.png",
     "categories": ["mens_clothing","outdoors","sporting","womens_clothing"]
   },
   "Ron_Jon_Surf_Shop": {
     "name": "Ron Jon Surf Shop",
     "code": "Ron_Jon_Surf_Shop",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Ronjonlogo.JPG/300px-Ronjonlogo.JPG",
     "categories": ["outdoors"]
   },
   "SamsClub": {
     "name": "Sams Club",
     "code": "SamsClub",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sams_Club.svg/440px-Sams_Club.svg.png",
     "categories": ["department",
       "warehouse",
       "grocery",
@@ -440,21 +496,25 @@
   "Staples_USA": {
     "name": "Staples",
     "code": "Staples_USA",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/9/94/S1012238_%284%29_%28Converted%29.png",
     "categories": ["electronics","office_supplies"]
   },
   "SuperCuts_Salons": {
     "name": "SuperCuts Salon",
     "code": "SuperCuts_Salons",
+    "logo":"https://www.brandsoftheworld.com/sites/default/files/styles/logo-original-577x577/public/062015/black_icon-black_logo.jpg?itok=GN-AWBSy",
     "categories": ["spa","salon"]
   },
   "TJMaxx": {
     "name": "T.J. Maxx",
     "code": "TJMaxx",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/TJ_Maxx_Logo.svg/440px-TJ_Maxx_Logo.svg.png",
     "categories": ["mens_clothing","womens_clothing","shoes","department","discount","kids_clothing","home_goods"]
   },
   "Target_Stores": {
     "name": "Target",
     "code": "Target_Stores",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Target_Corporation_logo_%28vector%29.svg/200px-Target_Corporation_logo_%28vector%29.svg.png",
     "categories":  [
       "department",
       "discount",
@@ -471,36 +531,43 @@
   "ToysRUs": {
     "name": "Toys 'R Us",
     "code": "ToysRUs",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Toys_%22R%22_Us_logo.svg/440px-Toys_%22R%22_Us_logo.svg.png",
     "categories": ["toys","baby_clothing"]
   },
   "Toys_R_Us_USA": {
     "name": "Toys 'R Us",
     "code": "Toys_R_Us_USA",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Toys_%22R%22_Us_logo.svg/440px-Toys_%22R%22_Us_logo.svg.png",
     "categories": ["toys","baby_clothing"]
   },
   "TraderJoes": {
     "name": "Trader Joe's",
     "code": "TraderJoes",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Trader_Joes_Logo.svg/500px-Trader_Joes_Logo.svg.png",
     "categories": ["grocery","upscale"]
   },
   "USPostalService": {
     "name": "US Postal Service",
     "code": "USPostalService",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/3/37/United_States_Postal_Service_Logo.svg/440px-United_States_Postal_Service_Logo.svg.png",
     "categories": ["government","postal"]
   },
   "Ulta": {
-    "name": "Ulta",
+    "name": "Ulta Beauty",
     "code": "Ulta",
+    "logo":"https://en.wikipedia.org/wiki/File:ULTA_Beauty_Logo.png",
     "categories": ["cosmetics"]
   },
   "Walgreens": {
     "name": "Walgreen's",
     "code": "Walgreens",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Walgreens_Logo.svg/400px-Walgreens_Logo.svg.png",
     "categories": ["pharmacy","cosmetics","grocery","convenience"]
   },
   "Walmart": {
     "name": "Walmart",
     "code": "Walmart",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/440px-Walmart_logo.svg.png",
     "categories":  [
       "department",
       "discount",
@@ -515,56 +582,67 @@
   "Winn_Dixie": {
     "name": "Winn Dixie",
     "code": "Winn_Dixie",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Winn_dixie_new_logo.png/440px-Winn_dixie_new_logo.png",
     "categories": ["grocery"]
   },
   "BestBuy": {
     "name": "Best Buy",
     "code": "BestBuy",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Best_Buy_Logo.svg/125px-Best_Buy_Logo.svg.png",
     "categories": ["electronics","office_supplies","toys"]
   },
   "HM": {
     "name": "H&M",
     "code": "HM",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/360px-H%26M-Logo.svg.png",
     "categories": ["mens_clothing","womens_clothing","baby_clothing","kids_clothing","discount"]
   },
   "ChildrensPlace": {
     "name": "The Children's Place",
     "code": "ChildrensPlace",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/d/d0/The_Children%27s_Place_logo.png",
     "categories": ["baby_clothing","kids_clothing"]
   },
   "VictoriasSecret": {
     "name": "Victoria's Secret",
     "code": "VictoriasSecret",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Victoria%27s_Secret_logo.svg/400px-Victoria%27s_Secret_logo.svg.png",
     "categories": ["lingerie","womens_clothing","cosmetics"]
   },
   "GiantEagle": {
     "name": "Giant Eagle",
     "code": "GiantEagle",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/GiantEagle.svg/400px-GiantEagle.svg.png",
     "categories": ["grocery","pharmacy"]
   },
   "GiantEagleMarketDistrict": {
     "name": "The Market District by Giant Eagle",
     "code": "GiantEagleMarketDistrict",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/GiantEagle.svg/400px-GiantEagle.svg.png",
     "categories": ["grocery","upscale","pharmacy"]
   },
   "GetGo": {
     "name": "GetGo by Giant Eagle",
     "code": "GetGo",
+    "logo":"https://www.getgocafe.com/Areas/GetGo/Assets/img/logo-getgo.gif",
     "categories": ["grocery","fuel"]
   },
   "Gymboree": {
     "name": "Gymboree",
     "code": "Gymboree",
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/3/32/Gymboree_logo.gif",
     "categories": ["kids_clothing","baby_clothing"]
   },
   "MaxErmas": {
     "name": "Max & Ermas",
     "code": "MaxErmas",
+    "logo":"https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Melogo.gif/440px-Melogo.gif",
     "categories": ["restaurant","casual_dining","american_food"]
   },
   "BabiesRUs": {
     "name": "Babies 'R Us",
     "code": "BabiesRUs",
+    "logo":"https://www.brandsoftheworld.com/sites/default/files/styles/logo-original-577x577/public/092014/babies_r_us.png?itok=wvXbZoyj",
     "categories": ["kids_clothing","baby_clothing","toys","parenting_supplies"]
   }
   

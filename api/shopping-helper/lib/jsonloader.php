@@ -93,10 +93,15 @@ class JSONLoader{
 				$data = json_decode(file_get_contents($this->files_path."/".$key.".json"));
 				$locations = array();
 				foreach ($data as $s) {
-					$thestore = new Store($s);
-					$thestore->setChain($store->name);
-					$thestore->setCode($store->code);
-					array_push($locations, $thestore);
+					if(!empty($s->latitude) && !empty($s->longitude)){
+						$thestore = new Store($s);
+						$thestore->setChain($store->name);
+						$thestore->setCode($store->code);
+						array_push($locations, $thestore);
+					}else{
+						//var_dump($s);
+					}
+					
 				}
 
 				$store->locations = $locations;
@@ -115,6 +120,11 @@ class JSONLoader{
 
 	public function nearbyStores($lat,$lon,$threshold=25){
 
+	}
+
+	public function getStoreList(){
+		$data = json_decode(file_get_contents($this->path."/stores.json"));
+		return $data;
 	}
 
 }
@@ -211,15 +221,15 @@ class NodeBuilder{
 	function getClusters(){
 		$stores = $this->stores;
 		$c = count($stores);
+		//if($c == 1){ return $this->stores;}
 		$store = array_shift($stores);
 		$clusters = array();
-
 
 		foreach($store->locations as $s){
 			$cluster = array();
 			array_push($cluster,$s);
 			foreach ($stores as $chain) {
-				# code...
+				# code...d
 				$found = false;
 				foreach($chain->locations as $loc){
 					if($s->isNearby($loc->latitude,$loc->longitude,3) && !$found){
@@ -232,7 +242,6 @@ class NodeBuilder{
 				array_push($clusters, $cluster);
 			}
 		}
-
 		return $clusters;
 	}
 }
