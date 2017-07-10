@@ -1,7 +1,14 @@
 <?php
 require("lib/jsonloader.php");
 require("lib/ajaxresponse.php");
-parse_str(implode('&', array_slice($argv, 1)), $_GET);
+
+//var_dump($argv);
+if($argv[1] && $argv[1] == "debug"){
+//	echo "IN HERE";
+	parse_str(implode('&', array_slice($argv, 2)), $_GET);
+}
+
+
 $loader = new JSONLoader("json","individual_files");
 
 $response = new AjaxResponse();
@@ -29,7 +36,6 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 	}
 
 	$locations = $loader->getStoreData($_GET['q']);
-	//var_dump($locations);
 	$storeinfo = $loader->loadStoreLocations($locations);
 	$candidates = array();
 
@@ -40,7 +46,7 @@ if(!empty($_GET['q']) && ((!empty($_GET['lon']) && !empty($_GET['lat'])) || !emp
 		array_push($candidates,$results);
 	}
 	
-	$clusters = new NodeBuilder($candidates);
+	$clusters = new NodeBuilder($candidates,$lat,$lon);
 	$output = $clusters->getClusters();
 	if($output){
 		$response->code=200;

@@ -1,8 +1,14 @@
 <?php
+function compareDistance($a,$b){
+	if ($a->distance == $b->distance) {
+        return 0;
+    }
+    return ($a->distance < $b->distance) ? -1 : 1;
+}
 
 class DistanceLib{
 
-	public static function distance($lat1, $lon1, $lat2, $lon2, $unit) {
+	public static function distance($lat1, $lon1, $lat2, $lon2, $unit="M") {
 		$theta = $lon1 - $lon2;
 		$dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
 		$dist = acos($dist);
@@ -25,6 +31,17 @@ class DistanceLib{
 		$data = json_decode($res);
 		if($data->status === "ok"){
 			return $data->data;
+		}else{
+			return false;
+		}
+	}
+
+	public static function geoLookup($lat,$lng){
+		$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=".$lat.",".$lng."&sensor=true";
+		$res = self::getData($url);
+		$data = json_decode($res);
+		if($data->results[1]){
+			return $data->results;
 		}else{
 			return false;
 		}
@@ -193,6 +210,44 @@ class Store{
 		$this->distance =$distance;
 		return $distance < $radius;
 	}
+
+	public function locate(){
+		$res = DistanceLib::geoLookup($this->latitude,$this->longitude);
+		$locale = $res[0];
+		$this->street_address = "";
+		if(is_array($locale->address_components)){
+			foreach ($locale->address_components as $key => $value) {
+				if(in_array("street_number",$value->types)){
+					$this->street_address .= $value->long_name;
+				}
+
+				if(in_array("route",$value->types)){
+					$this->street_address .= " ".$value->long_name;
+				}
+				if(in_array("postal_code",$value->types)){
+					$this->zip = $value->long_name;
+				}
+				if(in_array("postal_code",$value->types)){
+					$this->zip = $value->long_name;
+				}
+				if(in_array("locality",$value->types)){
+					$this->city = $value->long_name;
+				}
+				if(in_array("administrative_area_level_2",$value->types)){
+					$this->county = $value->long_name;
+				}
+				if(in_array("administrative_area_level_1",$value->types)){
+					$this->state = $value->short_name;
+				}
+				if(in_array("country",$value->types)){
+					$this->country = $value->short_name;
+				}
+			}
+		}
+		$this->formatted_address = $locale->formatted_address;
+		$this->place_id = $locale->place_id;
+		
+	}
 }
 
 
@@ -203,7 +258,8 @@ class NodeBuilder{
 	private $stores;
 	private $clusters;
 
-	function __construct($data = array()){
+
+	function __construct($data = array(),$lat=0,$lng=0){
 
 		try {
 			if(empty($data) || !is_array($data)){
@@ -211,6 +267,8 @@ class NodeBuilder{
 				return false;
 			}
 			$this->stores = $data;
+			$this->lat = $lat;
+			$this->lng = $lng;
 		} catch (Exception $e) {
 			echo $e->getMessage();
 			die();
@@ -239,10 +297,99 @@ class NodeBuilder{
 				}
 			}
 			if(count($cluster) == $c){
-				array_push($clusters, $cluster);
+				$sc =  new StoreCluster($cluster);
+				$sc->locate();
+				$sc->directionsUrl($this->lat,$this->lng);
+				array_push($clusters, $sc);
 			}
 		}
+		usort($clusters, 'compareDistance');
 		return $clusters;
+	}
+}
+
+
+class StoreCluster {
+	
+	public $city;
+	public $state;
+	public $zip;
+	public $county;
+	public $country;
+	public $data;
+
+	function __construct($data = false){
+		if(!is_array($data)){
+			return false;
+		}
+		$this->data = $data;
+	}
+
+	public function locate(){
+		$s = $this->data[0];
+		$res = DistanceLib::geoLookup($s->latitude,$s->longitude);
+		$locale = $res[0];
+
+		if(is_array($locale->address_components)){
+			foreach ($locale->address_components as $key => $value) {
+				if(in_array("postal_code",$value->types)){
+					$this->zip = $value->long_name;
+				}
+				if(in_array("locality",$value->types)){
+					$this->city = $value->long_name;
+				}
+				if(in_array("administrative_area_level_2",$value->types)){
+					$this->county = $value->long_name;
+				}
+				if(in_array("administrative_area_level_1",$value->types)){
+					$this->state = $value->short_name;
+				}
+				if(in_array("country",$value->types)){
+					$this->country = $value->short_name;
+				}
+			}
+		}
+
+		$this->lat = $locale->geometry->location->lat;
+		$this->lng = $locale->geometry->location->lng;
+
+		foreach ($this->data as $store) {
+			# code...
+			$store->locate();
+		}
+	}
+
+	public function directionsUrl($lat,$lng){
+		$this->start_lng = $lng;
+		$this->start_lat = $lat;
+		$this->distance = DistanceLib::distance($this->start_lat,$this->start_lng,$this->lat,$this->lng);
+
+		
+		foreach ($this->data as $store) {
+			$store->distance = DistanceLib::distance($this->start_lat,$this->start_lng,$store->latitude,$store->longitude);
+		}
+
+		usort($this->data, 'compareDistance');
+
+		$origin = $this->start_lat.",".$this->start_lng;
+		$data = $this->data;
+		$c = count($data);
+
+		$dest = array_pop($data);
+		$destination = $dest->latitude.",".$dest->longitude;
+		$arr = array();
+		foreach ($data as $store) {
+			array_push($arr, $store->latitude.",".$store->longitude);
+		}
+		$waypoints = implode("|", $arr);
+
+		$this->directions_data = new stdClass();
+		$this->directions_data->waypoints = $waypoints;
+		$this->directions_data->origin = $origin;
+		$this->directions_data->destination = $destination;
+
+		$this->directions_url = "https://maps.googleapis.com/maps/api/directions/json?origin=".$origin."&destination=".$destination."&waypoints=".$waypoints."&key=AIzaSyBTsAp9ogIaE-FBTQC55ddSg_uGkH4LEf4";
+
 	}
 }
 ?>

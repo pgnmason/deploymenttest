@@ -51,10 +51,12 @@ export default {
       console.log(this.storelist);
       console.log(this.zipcode);
       let payload = {zip:this.zipcode,q:this.storelist.join(',')}
+      let that = this;
       axios.get('http://ntmasonconsulting.com/api/shopping-helper/lookup.php?zip='+payload.zip+'&q='+payload.q).then(function(resp) {
         console.log(resp.data);
         if(resp.data.code == 200){
-          this.$store.commit('saveResults', resp.data.data);
+          that.$store.commit('saveResults', resp.data.data);
+          that.$router.push("results");
         }
       })
     }

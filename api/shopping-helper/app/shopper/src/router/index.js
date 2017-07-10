@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Preferences from '@/components/Preferences'
 import Locator from '@/components/Locator'
+import Results from '@/components/Results'
 
 
 Vue.use(Router)
@@ -23,6 +24,11 @@ export default new Router({
       path: '/locator',
       name: 'Locator',
       component: Locator
+    },
+    {
+      path: '/results',
+      name: 'Results',
+      component: Results
     }
   ]
 })

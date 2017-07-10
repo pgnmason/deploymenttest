@@ -41,7 +41,7 @@ var vm = new Vue({
         	   		router.push("preferences");
         	   }else{
         	   		console.log("SEEN PREFS");
-        	   		router.push("locator");s
+        	   		router.push("locator");
         	   }
         	}
         	console.log(resp)
