@@ -2,7 +2,7 @@
 require("lib/jsonloader.php");
 require("lib/ajaxresponse.php");
 //parse_str(implode('&', array_slice($argv, 1)), $_GET);
-$loader = new JSONLoader("json","individual_files");
+$loader = new JSONLoader("json","stores");
 
 $response = new AjaxResponse();
 
