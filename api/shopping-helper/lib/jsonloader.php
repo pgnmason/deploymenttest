@@ -392,4 +392,21 @@ class StoreCluster {
 
 	}
 }
+
+
+
+class StoreMeta{
+	public $name ="";
+	public $code = "";
+	public $logo = "http://ntmasonconsulting.com/shoptimizer/images/logos/logo.png";
+	public $categories = [];
+
+	function __construct($opts = false){
+		if(is_object($opts)){
+			foreach($opts as $k=>$v){
+				$this->$k = $v;
+			}
+		}
+	}
+}
 ?>

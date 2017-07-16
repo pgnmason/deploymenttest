@@ -1,2 +1,4 @@
 api/flip/src
 api/flip/src/*
+
+*.csv#

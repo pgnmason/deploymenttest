@@ -1,42 +1,27 @@
-
-Dunkin Donuts
-Express
-
-
-
-Sephora
-
-Uno
-Babies R Us
-Pizza Hut
-Bahama Breeze
-Bye Bye Baby
-Crazy 8
-Chilis
-Columbia
-
-Party City
-Pac Sun
-DSW
-Famous Footwear
-Finish Line
-Puma
-Starbuck's
-Sunoco
-
-Coldstone Creamery
-Atria's
-Olive Garden
-Red Lobster
-North Face
-Bare Minerals
-Bare Essentials
-UPS
-Fed Ex
-Wendy's
-Hampton Inn
-Marriott Courtyard
-Bruegger's
-Einsten Brothers Bagels
-Crazy Mocha
-Edible Arrangements
+touch dunkin-donuts.json
+touch uno.json
+touch pizza-hut.json
+touch bahama-breeze.json
+touch bye-bye-baby.json
+touch crazy-8.json
+touch chilis.json
+touch columbia.json
+touch famous-footwear.json
+touch finish-line.json
+touch starbuck_s.json
+touch sunoco.json
+touch coldstone-creamery.json
+touch atria_s.json
+touch olive-garden.json
+touch red-lobster.json
+touch north-face.json
+touch bare-minerals.json
+touch bare-essentials.json
+touch ups.json
+touch fed-ex.json
+touch wendy_s.json
+touch hampton-inn.json
+touch marriott-courtyard.json
+touch bruegger_s.json
+touch einsten-brothers-bagels.json
+touch crazy-mocha.json
