@@ -9,7 +9,7 @@ if($argv[1] && $argv[1] == "debug"){
 }
 
 
-$loader = new JSONLoader("json","individual_files");
+$loader = new JSONLoader("json","stores");
 
 $response = new AjaxResponse();
 
